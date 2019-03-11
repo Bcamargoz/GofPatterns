@@ -8,38 +8,19 @@ namespace FactoryMethod
 
     /// </summary>
 
-    abstract class Document
+    public abstract class Document
 
     {
-
-        private List<Page> _pages = new List<Page>();
-
- 
-
         // Constructor calls abstract Factory method
 
         public Document()
-
         {
-
-            this.CreatePages();
-
+            CreatePages();
         }
 
- 
-
-        public List<Page> Pages
-
-        {
-
-            get { return _pages; }
-
-        }
-
- 
+        public List<Page> Pages { get; } = new List<Page>();
 
         // Factory Method
-
         public abstract void CreatePages();
 
     }

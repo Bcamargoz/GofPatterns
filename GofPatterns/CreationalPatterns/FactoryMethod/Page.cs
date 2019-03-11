@@ -5,8 +5,7 @@ namespace FactoryMethod
     /// The 'Product' abstract class
 
     /// </summary>
-
-    abstract class Page
+    public abstract class Page
 
     {
 
